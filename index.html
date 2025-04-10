@@ -1,0 +1,66 @@
+<html style="background-color: rgb(65, 0, 0);">
+    <head>
+        <title>Resurgence</title>
+    </head>
+    <body>
+        <header>
+            <button style="position: fixed; font-size: 150%; border-radius: 12px; width: 35px; height: 35px; background-color: rgb(125, 0, 0); color: white; border: none;" onclick="window.scrollTo({ top: 0 })">&#x2302;</button>
+        </header><br><br><br>
+        <div style="text-align: center;">
+            <img src="https://web-datastore.github.io/Resurgence/Logo.jpg" width="125px" height="125px" style="border-radius: 100%;">
+        </div>
+        <div style="background-color: rgb(100, 0, 0); width: 100%; height: 125px; text-align: center; color: white; font-family: cursive; border-radius: 12px;">
+            <h1>Resurgence</h1>
+            <p>Welcome to Resurgence, the best secondary menu in Gorilla Tag.<br>Free, Undetected, and Powerful.</p>
+        </div><br>
+        <div style="background-color: black; width: 90%; height: 125px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Undetected</h1>
+            <p>Never get banned again!</p>
+        </div>
+        <div style="background-color: black; width: 90%; height: 125px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Powerful</h1>
+            <p>Lots of mods for the ultimate modding experience!</p>
+        </div>
+        <div style="background-color: black; width: 90%; height: 125px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Customizable</h1>
+            <p>Change the look for your perfect modding conditions!</p>
+        </div>
+        <div style="background-color: black; width: 90%; height: 125px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Unnoticeable</h1>
+            <p>Uses a powerful GUI layout so nobody can see you enabling and disabling mods!</p>
+        </div>
+        
+        <div style="background-color: rgb(65, 65, 65); width: 90%; height: 500px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Features</h1>
+            <iframe src="./Features.html" width="85%" height="400px" style="border: none;">Could not load the features. Please reload the page or check if your browser supports Iframes.</iframe>
+        </div><br>
+        <div style="background-color: rgb(65, 65, 65); width: 90%; height: 500px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <h1>Featured Review</h1>
+            <iframe src="https://example.com/" width="85%" height="400px">Could not load the features. Please reload the page or check if your browser supports Iframes.</iframe>
+        </div><br>
+        
+        <div style="background-color: rgb(35, 35, 35); width: 90%; height: 50px; text-align: center; color: white; font-family: cursive; border-radius: 12px; margin: auto;">
+            <p>Add <em style="color: red; cursor: pointer;" onclick="copyToClipboard('industry_')">industry_</em> on discord for the menu.</p>
+        </div><br>
+        <em>&copy;Copyright Resurgence 2025. All Rights Reserved.</em>
+        <script>
+        function generateRandomString(length) {
+                let result = '';
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                const charactersLength = characters.length;
+                for (let i = 0; i < length; i++) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                }
+                return result;
+            }
+            async function copyToClipboard(text) {
+                try {
+                    await navigator.clipboard.writeText(text)
+                    alert(`copied "${text}" to clipboard.`)
+                } catch(err) {
+                    alert(`Failed to copy "${text}" to clipboard. (${err}) Please Report this error to the discord. {Error Code: ${generateRandomString(27)}}`)
+                }
+            }
+        </script>
+    </body>
+</html>
